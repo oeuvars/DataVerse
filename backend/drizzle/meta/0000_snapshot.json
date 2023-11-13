@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "e3b7e04a-0141-4b4b-8e87-c940cdbdf9c8",
+  "id": "4959fd4e-1990-4c3d-a5d9-606f41a57989",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "blogs": {
@@ -14,16 +14,9 @@
           "notNull": true,
           "autoincrement": true
         },
-        "email": {
-          "name": "email",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "password": {
-          "name": "password",
-          "type": "text",
+        "file_name": {
+          "name": "file_name",
+          "type": "varchar(100)",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false
@@ -150,6 +143,13 @@
         "para_8": {
           "name": "para_8",
           "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "image_data": {
+          "name": "image_data",
+          "type": "boolean",
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false

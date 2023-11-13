@@ -1,7 +1,6 @@
 CREATE TABLE `blogs` (
 	`id` int AUTO_INCREMENT NOT NULL,
-	`email` text NOT NULL,
-	`password` text,
+	`file_name` varchar(100),
 	`main_heading` text,
 	`main_paragraph` text,
 	`sub_heading_1` text,
@@ -20,5 +19,6 @@ CREATE TABLE `blogs` (
 	`para_7` text,
 	`sub_heading_8` text,
 	`para_8` text,
+	`image_data` boolean,
 	CONSTRAINT `blogs_id` PRIMARY KEY(`id`)
 );

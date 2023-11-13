@@ -1,5 +1,3 @@
-import menu from "../../assets/icons/hamburger.svg";
-import x from "../../assets/icons/cross.svg";
 import instagram from "../../assets/icons/instagram.svg";
 import facebook from "../../assets/icons/facebook.svg";
 import { useEffect, useState } from "react";
@@ -53,14 +51,12 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`flex justify-between mx-auto top-0 fixed w-full lg:px-20 phone:px-5 phone:py-4 lg:py-3 z-40 transition duration-500 ease-in-out ${
-      isScrolled ? "bg-white/70 text-black" : "text-white"
-    }`}>
+    <div className={`flex justify-between mx-auto top-0 fixed w-full lg:px-20 phone:px-5 phone:py-4 lg:py-2 z-40 transition duration-500 ease-in-out ${isScrolled ? "bg-[#fffff8]/90" : ""}`}>
       <AnchorLink href="#home" className="my-auto flex gap-3">
         <img src={logo} alt="" className="phone:w-40 lg:w-52 mt-1" />
       </AnchorLink>
       {isAboveSmallScreens ? (
-        <div className="flex tablet:gap-7 lg:gap-10 tablet:text-base lg:text-xl text-black">
+        <div className={`flex tablet:gap-7 lg:gap-10 tablet:text-base lg:text-xl ${isScrolled ? "text-black" : "text-white"}`}>
           <AnchorLink href="#home" className="my-auto hover:underline transition duration-500 ease-in-out underline-offset-4">Home</AnchorLink>
           <Link to="/blogs" className="my-auto hover:underline transition duration-500 ease-in-out underline-offset-4">Blogs</Link>
           <div
@@ -73,9 +69,9 @@ export default function Navbar() {
               <motion.span
                 initial={{ rotate: 0 }}
                 animate={arrowControls}
-                className="h-5 w-5 text-gray-700 my-auto"
+                className="h-5 w-5 text-white my-auto"
               >
-                <ChevronDownIcon className="h-5 w-5 text-gray-700 my-auto" />
+                <ChevronDownIcon className={`h-5 w- my-auto transition duration-500 ease-in-out ${isScrolled ? "text-black" : "text-white" }`} />
               </motion.span>
             </button>
 

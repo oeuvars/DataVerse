@@ -10,7 +10,7 @@ import experience from "../../assets/images/landing/4.webp";
 const slides = [
   {
     image: lowcost,
-    title: "",
+    title: "Low Cost",
   },
   {
     image: datasecurity,
@@ -18,7 +18,7 @@ const slides = [
   },
   {
     image: allday,
-    title: "24/7 Operations",
+    title: "",
   },
   {
     image: experience,
@@ -31,16 +31,17 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="home">
-      <div className="embla lg:h-[90vh] phone:mt-[7vh] lg:mt-0" ref={emblaRef}>
+      <div className="embla phone:mt-[7vh] lg:mt-0" ref={emblaRef}>
       <div className="embla__container">
           {slides.map((slide, index) => (
             <div className="relative embla__slide" key={index}>
               <img
                 src={slide.image}
                 alt=""
-                className="lg:h-full w-full mx-auto object-cover"
+                className="lg:h-[100vh] w-full mx-auto object-cover"
               />
-              <p className="absolute z-20 phone:top-[3vw] lg:top-[4.5vw] left-0 px-2 text-white flex items-center justify-center phone:text-4xl lg:text-7xl lg:mt-4 mx-auto">
+              <div className="absolute top-0 left-0 w-full h-full bg-white opacity-10"></div>
+              <p className="absolute z-20 left-0 right-0 top-0 bottom-0 px-2 text-white flex items-center justify-center phone:text-4xl lg:text-[9rem] font-gogesty lg:mt-4 mx-auto">
                 {slide.title}
               </p>
             </div>

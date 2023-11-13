@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion"
 
 export interface CardData {
    id: number;
@@ -26,7 +25,6 @@ export interface CardData {
        "Since our establishment in 2017, we have been dedicated to assisting other companies in efficiently managing their businesses by outsourcing their non-essential competencies. From managing bulk data processing to providing professional web research services, we have helped hundreds of companies grow their businesses by providing assistance in their non-core divisions and back-office requirements, such as data processing and conversion.",
    },
  ];
-
 
 const WhyWorkWithUs: React.FC = () => {
   return (

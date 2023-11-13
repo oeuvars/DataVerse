@@ -8,7 +8,7 @@ const Blog: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/api/blog/${id}`)
+      .get(`https://dataverse-k1w7.onrender.com/api/blog/${id}`)
       .then((response) => {
         const fetchedBlog = response.data.blog[0];
         setBlogData(fetchedBlog);
@@ -40,7 +40,7 @@ const Blog: React.FC = () => {
       }
       return `<a href="${displayUrl}" target="_blank" rel="noopener noreferrer" style="color: blue;">${url}</a>`;
     });
-    const formattedText = textWithLinks.replace(/(\d+\.\s+)([^:]+:\s*)/g, (match: string, numberPart: string, boldPart: string) => {
+    const formattedText = textWithLinks.replace(/(\d+\.\s+)([^:]+:\s*)/g, (_match: string, _numberPart: string, boldPart: string) => {
       return `<strong>${boldPart}</strong>`;
     });
     const textWithLineBreaks = formattedText.replace(/\n/g, '<br />');

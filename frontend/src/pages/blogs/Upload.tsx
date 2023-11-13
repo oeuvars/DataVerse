@@ -29,6 +29,8 @@ const Upload: React.FC = () => {
    setImage(file || null);
  };
 
+ const fileName = Date.now() + image?.name!
+
   const subheadingsAndParagraphs = [
     { sub_heading: 'Sub Heading 1', para: 'Paragraph 1' },
     { sub_heading: 'Sub Heading 2', para: 'Paragraph 2' },
@@ -56,9 +58,9 @@ const Upload: React.FC = () => {
       toast.error('Main heading and main paragraph are required.');
       return;
     }
-    setIsSubmitting(true);
+    setIsSubmitting(true);2
     try {
-      await axios.post('http://localhost:4000/api/upload', formData);
+      await axios.post('https://dataverse-k1w7.onrender.com/api/upload', fileName);
       setIsSubmitting(false);
       toast.success('Blog submitted successfully!');
     } catch (error) {

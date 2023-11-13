@@ -1,4 +1,3 @@
-import Landing from "./home/Landing";
 import WhyWorkWithUs from "./home/WhyWorkWithUs";
 import WhatSetUsApart from "./home/WhatSetUsApart";
 import Testimonials from "./home/Testimonials";

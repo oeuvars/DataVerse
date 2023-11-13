@@ -26,7 +26,7 @@ const Login: React.FC = () => {
       e.preventDefault();
      try {
       setIsLoggingIn(true);
-      const res = await axios.post('http://localhost:4000/api/login',user)
+      const res = await axios.post('https://dataverse-k1w7.onrender.com/api/login',user)
       const newToken = res.data.token;
       localStorage.setItem('token', newToken);
       navigate('/blogs-upload')
@@ -69,7 +69,7 @@ const Login: React.FC = () => {
   return (
     <div className="min-h-screen grid lg:grid-cols-[1fr_2fr] landing-bg">
       {isAboveSmallScreens ? (
-        <Link to="/" className='relative'>
+        <Link to="/blogs" className='relative'>
           <ArrowLeftCircleIcon  className='absolute w-10 h-10 text-white hover:text-gray-300 font-medium transition duration-300 m-5'/>
           <img src={loginbg} alt='' className='h-full object-cover'/>
         </Link>
