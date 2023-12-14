@@ -4,7 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { Link } from "react-router-dom";
 import lowcost from "../../assets/images/landing/1.webp";
 import datasecurity from "../../assets/images/landing/2.webp";
-import allday from "../../assets/images/landing/3.webp";
+import allday from "../../assets/images/landing/5.webp";
 import experience from "../../assets/images/landing/4.webp";
 
 const slides = [
@@ -18,7 +18,7 @@ const slides = [
   },
   {
     image: allday,
-    title: "",
+    title: "24/7 Operations",
   },
   {
     image: experience,
@@ -31,17 +31,17 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="home">
-      <div className="embla phone:mt-[7vh] lg:mt-0" ref={emblaRef}>
+      <div className="embla phone:mt-[7vh] sm:mt-0" ref={emblaRef}>
       <div className="embla__container">
           {slides.map((slide, index) => (
             <div className="relative embla__slide" key={index}>
               <img
                 src={slide.image}
                 alt=""
-                className="lg:h-[100vh] w-full mx-auto object-cover"
+                className="phone:h-[30vh] sm:h-[50vh] lg:h-[100vh] w-full mx-auto object-cover"
               />
               <div className="absolute top-0 left-0 w-full h-full bg-white opacity-5"></div>
-              <p className="absolute z-20 top-[36vw] bottom-0 left-0 right-0 flex justify-center items-center px-2 text-white phone:text-4xl lg:text-[9vw] font-wix-semibold font-medium mx-auto">
+              <p className="absolute z-20 phone:top-[20vh] sm:top-[40vh] lg:top-[36vw] bottom-0 left-0 right-0 flex justify-center items-center px-2 text-white phone:text-4xl phone:text-[5vh] sm:text-[8vw] lg:text-[9vw] font-wix-semibold font-medium mx-auto">
                 {slide.title}
               </p>
             </div>

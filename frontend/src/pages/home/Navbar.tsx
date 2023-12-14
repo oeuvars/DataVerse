@@ -56,16 +56,16 @@ export default function Navbar() {
         <img src={logo} alt="" className="phone:w-40 lg:w-52" />
       </AnchorLink>
       {isAboveSmallScreens ? (
-        <div className={`flex tablet:gap-7 lg:gap-10 tablet:text-base lg:text-xl ${isScrolled ? "text-black" : "text-white"}`}>
-          <AnchorLink href="#home" className="my-auto text-[1.1vw] hover:underline transition duration-500 ease-in-out underline-offset-4">Home</AnchorLink>
-          <Link to="/blogs" className="my-auto hover:underline text-[1.1vw] transition duration-500 ease-in-out underline-offset-4">Blogs</Link>
+        <div className={`flex tablet:gap-7 sm:gap-5 tablet:text-base lg:text-xl ${isScrolled ? "text-black" : "text-white"}`}>
+          <AnchorLink href="#home" className="my-auto phone:text-base lg:text-lg hover:underline transition duration-500 ease-in-out underline-offset-4">Home</AnchorLink>
+          <Link to="/blogs" className="my-auto hover:underline phone:text-base lg:text-lg transition duration-500 ease-in-out underline-offset-4">Blogs</Link>
           <div
             className={`relative group`}
             onMouseEnter={() => handleServicesHover(true)}
             onMouseLeave={() => handleServicesHover(false)}
           >
             <button className="flex items-center px-2 py-[0.4vw] border rounded-md transition duration-300">
-              <span className="mr-2 text-[1.1vw]">Services</span>
+              <span className="mr-2 phone:text-base lg:text-lg">Services</span>
               <motion.span
                 initial={{ rotate: 0 }}
                 animate={arrowControls}
@@ -80,7 +80,7 @@ export default function Navbar() {
               animate={controls}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className={`absolute grid px-5 gap-3 w-[12rem] py-3 -left-10 backdrop-blur-md rounded-lg shadow-xl text-base ${
+              className={`absolute grid px-5 gap-3 w-[12rem] py-3 -left-10 backdrop-blur-md rounded-lg shadow-xl phone:text-base lg:text-lg ${
                 isServicesHovered ? "block" : "hidden"
               }`}
             >
@@ -91,9 +91,9 @@ export default function Navbar() {
               <Link to="/dataentry">Data Entry</Link>
             </motion.div>
           </div>
-          <AnchorLink href="#whatsetsusapart" className="my-auto text-[1.1vw] hover:underline transition duration-500 ease-in-out underline-offset-4">Features</AnchorLink>
-          <AnchorLink href="#testimonials" className="my-auto text-[1.1vw] hover:underline transition duration-500 ease-in-out underline-offset-4">Testimonials</AnchorLink>
-          <AnchorLink href="#contact" className="my-auto text-[1.1vw] hover:underline transition duration-500 ease-in-out underline-offset-4">Contact Us</AnchorLink>
+          <AnchorLink href="#whatsetsusapart" className="my-auto phone:text-base lg:text-lg hover:underline transition duration-500 ease-in-out underline-offset-4">Features</AnchorLink>
+          <AnchorLink href="#testimonials" className="my-auto phone:text-base lg:text-lg hover:underline transition duration-500 ease-in-out underline-offset-4">Testimonials</AnchorLink>
+          <AnchorLink href="#contact" className="my-auto phone:text-base lg:text-lg hover:underline transition duration-500 ease-in-out underline-offset-4">Contact Us</AnchorLink>
         </div>
       ) : (
         <button onClick={toggleMenu}>
