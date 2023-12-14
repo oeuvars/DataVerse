@@ -10,7 +10,10 @@ export default {
         "wix-regular": ["Wix-Regular", "sans-serif"],
         "wix-semibold": ["Wix-Semibold", "sans-serif"],
         "gogesty": ["Gogesty", "serif"],
-        "garamond": ["Cormorant Garamond", "serif"]
+        "garamond": ["Cormorant Garamond", "serif"],
+        "rethink": ["Rethink-Sans", "sans-serif"],
+        "playfair-display": ['Playfair Display', "serif"],
+        "kalina": ['Kalnia', "serif"]
       },
     },
     screens: {

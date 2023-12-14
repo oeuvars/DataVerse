@@ -40,8 +40,8 @@ export const Hero: React.FC = () => {
                 alt=""
                 className="lg:h-[100vh] w-full mx-auto object-cover"
               />
-              <div className="absolute top-0 left-0 w-full h-full bg-white opacity-10"></div>
-              <p className="absolute z-20 left-0 right-0 top-0 bottom-0 px-2 text-white flex items-center justify-center phone:text-4xl lg:text-[9rem] font-gogesty lg:mt-4 mx-auto">
+              <div className="absolute top-0 left-0 w-full h-full bg-white opacity-5"></div>
+              <p className="absolute z-20 top-[36vw] bottom-0 left-0 right-0 flex justify-center items-center px-2 text-white phone:text-4xl lg:text-[9vw] font-wix-semibold font-medium mx-auto">
                 {slide.title}
               </p>
             </div>

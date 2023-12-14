@@ -51,21 +51,21 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`flex justify-between mx-auto top-0 fixed w-full lg:px-20 phone:px-5 phone:py-4 lg:py-2 z-40 transition duration-500 ease-in-out ${isScrolled ? "bg-[#fffff8]/90" : ""}`}>
+    <div className={`flex justify-between mx-auto top-0 fixed w-full lg:px-20 phone:px-5 phone:py-4 lg:py-4 z-40 transition duration-500 ease-in-out ${isScrolled ? "bg-[#fffff8]/90" : ""}`}>
       <AnchorLink href="#home" className="my-auto flex gap-3">
-        <img src={logo} alt="" className="phone:w-40 lg:w-52 mt-1" />
+        <img src={logo} alt="" className="phone:w-40 lg:w-52" />
       </AnchorLink>
       {isAboveSmallScreens ? (
         <div className={`flex tablet:gap-7 lg:gap-10 tablet:text-base lg:text-xl ${isScrolled ? "text-black" : "text-white"}`}>
-          <AnchorLink href="#home" className="my-auto hover:underline transition duration-500 ease-in-out underline-offset-4">Home</AnchorLink>
-          <Link to="/blogs" className="my-auto hover:underline transition duration-500 ease-in-out underline-offset-4">Blogs</Link>
+          <AnchorLink href="#home" className="my-auto text-[1.1vw] hover:underline transition duration-500 ease-in-out underline-offset-4">Home</AnchorLink>
+          <Link to="/blogs" className="my-auto hover:underline text-[1.1vw] transition duration-500 ease-in-out underline-offset-4">Blogs</Link>
           <div
             className={`relative group`}
             onMouseEnter={() => handleServicesHover(true)}
             onMouseLeave={() => handleServicesHover(false)}
           >
-            <button className="flex items-center p-2 my-2 border rounded-md transition duration-300">
-              <span className="mr-2">Services</span>
+            <button className="flex items-center px-2 py-[0.4vw] border rounded-md transition duration-300">
+              <span className="mr-2 text-[1.1vw]">Services</span>
               <motion.span
                 initial={{ rotate: 0 }}
                 animate={arrowControls}
@@ -80,7 +80,7 @@ export default function Navbar() {
               animate={controls}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className={`absolute grid px-5 gap-3 w-[12rem] py-3 -left-10 backdrop-blur-md rounded-lg shadow-xl ${
+              className={`absolute grid px-5 gap-3 w-[12rem] py-3 -left-10 backdrop-blur-md rounded-lg shadow-xl text-base ${
                 isServicesHovered ? "block" : "hidden"
               }`}
             >
@@ -91,9 +91,9 @@ export default function Navbar() {
               <Link to="/dataentry">Data Entry</Link>
             </motion.div>
           </div>
-          <AnchorLink href="#whatsetsusapart" className="my-auto hover:underline transition duration-500 ease-in-out underline-offset-4">Features</AnchorLink>
-          <AnchorLink href="#testimonials" className="my-auto hover:underline transition duration-500 ease-in-out underline-offset-4">Testimonials</AnchorLink>
-          <AnchorLink href="#contact" className="my-auto hover:underline transition duration-500 ease-in-out underline-offset-4">Contact Us</AnchorLink>
+          <AnchorLink href="#whatsetsusapart" className="my-auto text-[1.1vw] hover:underline transition duration-500 ease-in-out underline-offset-4">Features</AnchorLink>
+          <AnchorLink href="#testimonials" className="my-auto text-[1.1vw] hover:underline transition duration-500 ease-in-out underline-offset-4">Testimonials</AnchorLink>
+          <AnchorLink href="#contact" className="my-auto text-[1.1vw] hover:underline transition duration-500 ease-in-out underline-offset-4">Contact Us</AnchorLink>
         </div>
       ) : (
         <button onClick={toggleMenu}>

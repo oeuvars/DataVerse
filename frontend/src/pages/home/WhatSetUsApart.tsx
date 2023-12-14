@@ -82,7 +82,7 @@ const WhatSetUsApart = () => {
             ))}
 
             <button className="px-12 py-3 shadow-md bg-black text-white flex mx-auto mt-10 ">
-              <a href="mailto:someone@example.com">Get Started</a>
+              <a href="mailto:prembasu24@gmail.com">Get Started</a>
             </button>
           </div>
         </section>
@@ -116,7 +116,7 @@ const WhatSetUsApart = () => {
               </div>
             ))}
             <button className="px-12 py-3 shadow-md bg-black text-white flex mx-auto mt-2 ">
-              <a href="prembasu24@gmail.com">Get Started</a>
+              <a href="mailto:prembasu24@gmail.com">Get Started</a>
             </button>
           </div>
         </section>
