@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
       {isAboveSmallScreens ? (
         <section className="pt-20" id="contact">
           <div className="mb-10">
-            <h1 className="text-3xl  text-center mb-3">
+            <h1 className="text-3xl font-medium text-center mb-3">
               Ready to Get Started
             </h1>
             <p className="text-center text-lg">
@@ -112,7 +112,7 @@ const Contact: React.FC = () => {
         <>
           <section className="pt-16" id="contact">
             <div className="mb-7">
-              <h1 className="text-2xl  text-center mb-3">
+              <h1 className="text-2xl font-medium text-center mb-3">
                 Ready to Get Started
               </h1>
               <p className="text-center font-rajdhani-medium text-sm w-5/6 mx-auto">

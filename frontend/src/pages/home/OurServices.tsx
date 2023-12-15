@@ -50,7 +50,7 @@ const OurServices:React.FC = () => {
   return (
     <section className="bg-blue-50" id="services">
       <div className="w-11/12 mx-auto py-16 flex flex-col gap-11">
-        <h1 className="text-4xl text-center">Our Services</h1>
+        <h1 className="text-4xl font-medium text-center">Our Services</h1>
         <div className="grid lg:grid-cols-3 phone:gap-5 lg:gap-7 z-10">
           {services.map((service) => (
             <div key={service.id}>

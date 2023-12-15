@@ -53,7 +53,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials">
       <div className="pt-[4.5rem] pb-16">
-        <h1 className=" phone:text-2xl lg:text-3xl text-center">
+        <h1 className=" phone:text-2xl lg:text-3xl text-center font-medium">
           Customer Testimonials
         </h1>
         <p className="font-rajdhani-medium phone:text-sm tablet:text-base lg:text-lg text-center mt-3 w-5/6 mx-auto">

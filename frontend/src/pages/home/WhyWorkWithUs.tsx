@@ -29,7 +29,7 @@ export interface CardData {
 const WhyWorkWithUs: React.FC = () => {
   return (
     <section id="whyus" className="phone:mb-12 lg:mb-20">
-      <div className=" phone:text-2xl lg:text-3xl text-center phone:pt-[3.5rem] lg:pt-20">
+      <div className=" phone:text-2xl lg:text-3xl text-center phone:pt-[3.5rem] lg:pt-20 font-medium">
         Why Work With US?
       </div>
       <div className="grid phone:grid-cols-1 lg:grid-cols-3 w-11/12 mx-auto mt-10 gap-5">

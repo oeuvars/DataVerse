@@ -52,7 +52,7 @@ const WhatSetUsApart = () => {
       {isAboveSmallScreens ? (
         <section id="why us">
           <div className="mx-auto mb-20 pt-20">
-            <h1 className="text-3xl  text-center mb-5">
+            <h1 className="text-3xl font-medium text-center mb-5">
               What Sets Us Apart!
             </h1>
             <p className="w-2/5 text-justify font-rajdhani-medium mx-auto">
@@ -89,7 +89,7 @@ const WhatSetUsApart = () => {
       ) : (
         <section id="why us">
           <div className="mx-auto phone:pt-16 tablet:pt-0">
-            <h1 className="text-2xl  text-center mb-5">
+            <h1 className="text-2xl font-medium text-center mb-5">
               What Sets Us Apart!
             </h1>
             <p className="font-rajdhani-medium px-5 tablet:text-base phone:text-sm text-justify mx-auto tablet:w-5/6">
