@@ -12,7 +12,7 @@ interface User {
 }
 
 const users: User[] = [
-  { id: 1, email: 'mohanraj@dataverseindia.com', password: 'mohanraj' },
+  { id: 1, email: 'premanshu@dataverseindia.com', password: 'premanshu' },
   { id: 2, email: 'aditya@dataverseindia.com', password: 'aditya' },
   { id: 3, email: 'anurag@dataverseindia.com', password: 'anurag' },
 ];
