@@ -41,7 +41,7 @@ export const Hero: React.FC = () => {
                 className="phone:h-[30vh] sm:h-[50vh] lg:h-[100vh] w-full mx-auto object-cover"
               />
               <div className="absolute top-0 left-0 w-full h-full bg-white opacity-5"></div>
-              <p className="absolute z-20 phone:top-[20vh] sm:top-[40vh] lg:top-[36vw] bottom-0 left-0 right-0 flex justify-center items-center px-2 text-white phone:text-4xl phone:text-[5vh] sm:text-[8vw] lg:text-[9vw] font-wix-semibold font-medium mx-auto">
+              <p className="absolute z-20 phone:top-[22vh] sm:top-[40vh] lg:top-[36vw] bottom-0 left-0 right-0 flex justify-center items-center px-2 text-white phone:text-[4vh] sm:text-[8vw] lg:text-[9vw] font-wix-semibold font-medium mx-auto">
                 {slide.title}
               </p>
             </div>

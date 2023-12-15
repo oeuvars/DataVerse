@@ -57,8 +57,8 @@ export default function Navbar() {
       </AnchorLink>
       {isAboveSmallScreens ? (
         <div className={`flex tablet:gap-7 sm:gap-5 tablet:text-base lg:text-xl ${isScrolled ? "text-black" : "text-white"}`}>
-          <AnchorLink href="#home" className="my-auto phone:text-base lg:text-lg hover:underline transition duration-500 ease-in-out underline-offset-4">Home</AnchorLink>
-          <Link to="/blogs" className="my-auto hover:underline phone:text-base lg:text-lg transition duration-500 ease-in-out underline-offset-4">Blogs</Link>
+          <AnchorLink href="#home" className="my-auto phone:text-base lg:text-lg hover-underline-animation">Home</AnchorLink>
+          <Link to="/blogs" className="my-auto hover-underline-animation phone:text-base lg:text-lg">Blogs</Link>
           <div
             className={`relative group`}
             onMouseEnter={() => handleServicesHover(true)}
@@ -91,9 +91,9 @@ export default function Navbar() {
               <Link to="/dataentry">Data Entry</Link>
             </motion.div>
           </div>
-          <AnchorLink href="#whatsetsusapart" className="my-auto phone:text-base lg:text-lg hover:underline transition duration-500 ease-in-out underline-offset-4">Features</AnchorLink>
-          <AnchorLink href="#testimonials" className="my-auto phone:text-base lg:text-lg hover:underline transition duration-500 ease-in-out underline-offset-4">Testimonials</AnchorLink>
-          <AnchorLink href="#contact" className="my-auto phone:text-base lg:text-lg hover:underline transition duration-500 ease-in-out underline-offset-4">Contact Us</AnchorLink>
+          <AnchorLink href="#whatsetsusapart" className="my-auto phone:text-base lg:text-lg hover-underline-animation">Features</AnchorLink>
+          <AnchorLink href="#testimonials" className="my-auto phone:text-base lg:text-lg hover-underline-animation">Testimonials</AnchorLink>
+          <AnchorLink href="#contact" className="my-auto phone:text-base lg:text-lg hover-underline-animation">Contact Us</AnchorLink>
         </div>
       ) : (
         <button onClick={toggleMenu}>
