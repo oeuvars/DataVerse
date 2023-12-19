@@ -1,5 +1,8 @@
 {
-   "watch": ["src"],
+   "watch": {
+      "dirs": ["src"],
+      "files": ["./index.ts"]
+   },
    "ext": ".ts,.js",
-   "exec": "ts-node ./src/index.ts"
+   "exec": "ts-node ./index.ts"
 }
