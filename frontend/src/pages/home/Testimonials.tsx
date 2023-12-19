@@ -60,9 +60,9 @@ const Testimonials = () => {
           Recommended by leading experts of DataVerse partners - Reviews.
         </p>
       </div>
-      <div className="grid phone:grid-cols-1 lg:grid-cols-4 w-5/6 mx-auto gap-6">
+      <div className="grid phone:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-5/6 mx-auto gap-6">
         {customers.map((customer) => (
-          <div className="bg-white/30 shadow-md p-4 phone:h-[13rem] tablet:h-[10rem] lg:h-80 hover:shadow-2xl hover:scale-105 transition duration-500 cursor-pointer">
+          <div className="bg-white/30 shadow-md p-4 hover:shadow-2xl hover:scale-105 transition duration-500 cursor-pointer">
             <div className="flex justify-between">
               <h1 className="text-xl  mb-2">{customer.name}</h1>
               <Stars />

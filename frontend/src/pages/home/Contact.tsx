@@ -30,20 +30,23 @@ const Contact: React.FC = () => {
                   <PhoneIcon className="w-8 h-8 my-auto"/>
                   <div className="my-auto">
                     <h1 className=" text-xl mb-2">Contact</h1>
-                    <p className="font-rajdhani-medium">+91-9475484429</p>
-                    <p className="font-rajdhani-medium">prembasu24@gmail.com</p>
+                    <a target="_blank" href="tel:9475484429" className="hover:text-red-600 animation cursor-pointer">+91-9475484429</a>
+                    <br/>
+                    <a target="_blank" href="mailto:prembasu24@gmail.com" className="hover:text-red-600 animation cursor-pointer">prembasu24@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <MapIcon className="my-auto w-8 h-8"/>
                   <div className="my-auto">
                     <h1 className=" text-xl mb-2">Address</h1>
-                    <p className="font-rajdhani-medium">
-                      10/A Durgabari Road, Dum Dum Cantonment
-                    </p>
-                    <p className="font-rajdhani-medium">
-                      Kolkata, West Bengal - 700028, India
-                    </p>
+                    <a target="_blank" href="https://www.google.com/maps/place/10no,+Durga+Bari+Rd,+Mahendra+Colony,+Gora+Bazar,+Rajbari,+Dum+Dum,+Kolkata,+North+Dumdum,+West+Bengal+700028/@22.6347283,88.4126756,19z/data=!4m6!3m5!1s0x39f89e12ddb5f327:0xdd3f670bc3542571!8m2!3d22.6345756!4d88.4133474!16s%2Fg%2F11vc58p7df?entry=ttu" className="hover:text-red-600 animation">
+                      <p className="">
+                        10/A Durgabari Road, Dum Dum Cantonment
+                      </p>
+                      <p className="">
+                        Kolkata, West Bengal - 700028, India
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -51,7 +54,7 @@ const Contact: React.FC = () => {
                 <h1 className="text-center text-3xl">
                   Send a Message
                 </h1>
-                <form target="_blank" action="https://getform.io/f/2c59ea90-32c9-4f30-9acb-bd5cdd4bf7b3" method="post" className="bg-white/30 p-7 rounded-md shadow font-rajdhani-medium border-black">
+                <form target="_blank" action="https://getform.io/f/2c59ea90-32c9-4f30-9acb-bd5cdd4bf7b3" method="post" className="bg-white/30 p-7 rounded-md shadow  border-black">
                   <div className="flex gap-5 mb-5">
                     <input
                       type="text"
@@ -94,7 +97,7 @@ const Contact: React.FC = () => {
           </div>
           <div className="w-full h-20 bg-white border">
             <div className="w-2/3 mx-auto flex h-full justify-between">
-              <h1 className="my-auto font-rajdhani-medium text-lg">
+              <h1 className="my-auto  text-lg">
                 © 2017 Copyright: DataVerse
               </h1>
               <div className="flex gap-3">
@@ -115,7 +118,7 @@ const Contact: React.FC = () => {
               <h1 className="text-2xl font-medium text-center mb-3">
                 Ready to Get Started
               </h1>
-              <p className="text-center font-rajdhani-medium text-sm w-5/6 mx-auto">
+              <p className="text-center  text-sm w-5/6 mx-auto">
                 Don&apos;t wait any longer! Drop us a message and let&apos;s discuss how
                 we can help your business grow.
               </p>
@@ -126,20 +129,23 @@ const Contact: React.FC = () => {
                   <PhoneIcon className="w-6 h-6 my-auto"/>
                   <div className="my-auto">
                     <h1 className=" text-lg mb-1">Contact</h1>
-                    <p className="font-rajdhani-medium text-sm">+91-9475484429</p>
-                    <p className="font-rajdhani-medium text-sm">prembasu24@gmail.com</p>
+                    <a href="tel:9475484429" className="text-sm">+91-9475484429</a>
+                    <br />
+                    <a href="mailto:prembasu24@gmail.com">prembasu24@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex gap-5 h-24">
                   <MapIcon className="w-6 h-6 my-auto"/>
                   <div className="my-auto">
                     <h1 className=" text-lg mb-1">Address</h1>
-                    <p className="font-rajdhani-medium text-sm">
-                      10/A Durgabari Road, Dum Dum Cantonment
-                    </p>
-                    <p className="font-rajdhani-medium text-sm">
-                      Kolkata, West Bengal - 700028, India
-                    </p>
+                    <a href="https://www.google.com/maps/place/10no,+Durga+Bari+Rd,+Mahendra+Colony,+Gora+Bazar,+Rajbari,+Dum+Dum,+Kolkata,+North+Dumdum,+West+Bengal+700028/@22.6347283,88.4126756,19z/data=!4m6!3m5!1s0x39f89e12ddb5f327:0xdd3f670bc3542571!8m2!3d22.6345756!4d88.4133474!16s%2Fg%2F11vc58p7df?entry=ttu">
+                      <p className="text-sm">
+                        10/A Durgabari Road, Dum Dum Cantonment
+                      </p>
+                      <p className="text-sm">
+                        Kolkata, West Bengal - 700028, India
+                      </p>
+                    </a>
                   </div>
                 </div>
                 <img
@@ -153,7 +159,7 @@ const Contact: React.FC = () => {
                   <h1 className="text-center text-2xl ">
                     Send a Message
                   </h1>
-                  <form target="_blank" action="https://getform.io/f/b84ca852-d8f0-497a-8db2-b73ba52c97e5" method="post" className="bg-white p-6 mt-5 border-2 font-rajdhani-medium border-black/40 rounded">
+                  <form target="_blank" action="https://getform.io/f/b84ca852-d8f0-497a-8db2-b73ba52c97e5" method="post" className="bg-white p-6 mt-5 border-2  border-black/40 rounded">
                     <div className="flex flex-col mb-3">
                       <input
                         type="text"
@@ -191,7 +197,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="w-full h-20 border">
               <div className="w-11/12 mx-auto flex h-full justify-between">
-                <h1 className="my-auto font-rajdhani-medium">
+                <h1 className="my-auto ">
                   © 2017 Copyright: DataVerse
                 </h1>
                 <div className="flex gap-3">

@@ -51,7 +51,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`flex justify-between mx-auto top-0 fixed w-full lg:px-20 phone:px-5 phone:py-4 lg:py-4 z-40 transition duration-500 ease-in-out ${isScrolled ? "bg-[#fffff8]/90" : ""}`}>
+    <div className={`flex justify-between mx-auto top-0 fixed w-full lg:px-20 phone:px-5 phone:py-4 lg:py-3 z-40 transition duration-500 ease-in-out ${isScrolled ? "bg-[#fffff8]/90" : ""}`}>
       <AnchorLink href="#home" className="my-auto flex gap-3">
         <img src={logo} alt="" className="phone:w-40 lg:w-52" />
       </AnchorLink>
@@ -80,15 +80,15 @@ export default function Navbar() {
               animate={controls}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className={`absolute grid px-5 gap-3 w-[12rem] py-3 -left-10 backdrop-blur-md rounded-lg shadow-xl phone:text-base lg:text-lg ${
+              className={`absolute grid px-5 gap-3 w-[13vw] py-5 -left-10 backdrop-blur-md rounded-lg shadow-xl phone:text-base lg:text-lg ${
                 isServicesHovered ? "block" : "hidden"
               }`}
             >
-              <Link to="/webdev">Web Development</Link>
-              <Link to="/webresearch">Web Research</Link>
-              <Link to="/digitalmarketing">Digital Marketing</Link>
-              <Link to="/graphic">Graphic Design</Link>
-              <Link to="/dataentry">Data Entry</Link>
+              <Link to="/webdev" className="hover:text-indigo-500 animation phone:text-sm sm:text-base lg:text-lg">Web Development</Link>
+              <Link to="/webresearch" className="hover:text-indigo-500 animation phone:text-sm sm:text-base lg:text-lg">Web Research</Link>
+              <Link to="/digitalmarketing" className="hover:text-indigo-500 animation phone:text-sm sm:text-base lg:text-lg">Digital Marketing</Link>
+              <Link to="/graphic" className="hover:text-indigo-500 animation phone:text-sm sm:text-base lg:text-lg">Graphic Design</Link>
+              <Link to="/dataentry" className="hover:text-indigo-500 animation phone:text-sm sm:text-base lg:text-lg">Data Entry</Link>
             </motion.div>
           </div>
           <AnchorLink href="#whatsetsusapart" className="my-auto phone:text-base lg:text-lg hover-underline-animation">Features</AnchorLink>
@@ -117,12 +117,12 @@ export default function Navbar() {
               className="flex flex-col gap-5 mx-auto text-white p-8"
               onClick={toggleMenu}
             >
-              <AnchorLink href="#home" className="my-auto text-black text-xl">Home</AnchorLink>
-              <Link to="/blogs" className="my-auto text-black text-xl">Blogs</Link>
-              <AnchorLink href="#whyus" className="my-auto text-black text-xl">Why Us</AnchorLink>
-              <AnchorLink href="#whatsetsusapart" className="my-auto text-black text-xl">Features</AnchorLink>
-              <AnchorLink href="#testimonials" className="my-auto text-black text-xl">Testimonials</AnchorLink>
-              <AnchorLink href="#contact" className="my-auto text-black text-xl">Contact Us</AnchorLink>
+              <AnchorLink href="#home" className="my-auto text-black text-base">Home</AnchorLink>
+              <Link to="/blogs" className="my-auto text-black text-base">Blogs</Link>
+              <AnchorLink href="#whyus" className="my-auto text-black text-base">Why Us</AnchorLink>
+              <AnchorLink href="#whatsetsusapart" className="my-auto text-black text-base">Features</AnchorLink>
+              <AnchorLink href="#testimonials" className="my-auto text-black text-base">Testimonials</AnchorLink>
+              <AnchorLink href="#contact" className="my-auto text-black text-base">Contact Us</AnchorLink>
             </div>
             <div className="p-5 h-full mt-40 mx-auto justify-between">
               <h1 className="my-auto text-black/70 text-lg mb-3">
