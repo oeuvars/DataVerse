@@ -8,7 +8,7 @@ export default {
     dbCredentials: {
         host: 'srv1000.hstgr.io',
         port: 3306,
-        user: 'u581162093_oeuvars',
+        user: 'datavers',
         database: 'u581162093_oeuvars',
         password: '/V09vx/S8m',
     },
