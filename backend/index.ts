@@ -17,7 +17,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api', router)
-
+app.use('/', (req, res) => {
+    res.send(`<h1>Welcome to the backside</h1>`);
+  });
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
